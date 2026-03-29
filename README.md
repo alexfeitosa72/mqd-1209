@@ -4,18 +4,13 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19209391.svg)](https://doi.org/10.5281/zenodo.19209780)
 
-> **Como citar:**
-> Feitosa, A. R.; Silva, G. G. P. (2026). *MQD-1209: Dataset de Análise de Sentimentos em Português Brasileiro com Anotação Pareada por Gênero*. Zenodo. https://doi.org/10.5281/zenodo.19209780
-
 ---
 
 ## 1. Contextualização
 
-O MQD-1209 é um dataset de **Análise de Sentimentos (AS) em português brasileiro** construído para investigar divergências interpretativas associadas ao gênero do anotador em tarefas de Classificação de Textos (CT). Trata-se do primeiro recurso público que combina, para o português brasileiro: (i) anotação pareada por grupos de gênero equilibrados, (ii) metadados de tempo de resposta preservados no nível do julgamento individual, e (iii) protocolo controlado de quatro anotadores por grupo por instância.
+O MQD-1209 é um dataset de **Análise de Sentimentos (AS) em português brasileiro** construído para investigar divergências interpretativas associadas ao gênero do anotador em tarefas de Classificação de Textos (CT). Trata-se recurso público pioneiro que combina, para o português brasileiro: (i) anotação pareada por grupos de gênero equilibrados, (ii) metadados de tempo de resposta preservados no nível do julgamento individual, e (iii) protocolo controlado de quatro anotadores por grupo por instância.
 
-O corpus textual é derivado do **MQD-1465**, conjunto de frases extraídas do portal [Meu Querido Diário](http://www.meuqueridodiario.com.br) — plataforma pública de diários pessoais em português brasileiro. Os textos preservam sua forma original, incluindo variações ortográficas e expressões coloquiais, o que os torna representativos da escrita informal espontânea em redes sociais.
-
-O dataset foi produzido no âmbito da dissertação de mestrado *"Do Anotador ao Classificador: Identificação e Mensuração de Viés de Gênero em Análise de Sentimentos para o Português Brasileiro"* (CEFET/RJ, 2026) e é um dos componentes da **Metodologia de Identificação de Viés (MIV)**. O estudo foi aprovado por Comitê de Ética em Pesquisa sob o protocolo CAAE nº 82267824.8.0000.5289.
+O corpus textual é derivado do **MQD-1465**, conjunto de frases extraídas de uma plataforma pública de diários pessoais em português brasileiro. Os textos preservam sua forma original, incluindo variações ortográficas e expressões coloquiais, o que os torna representativos da escrita informal espontânea em redes sociais.
 
 ---
 
@@ -34,7 +29,7 @@ O corpus de partida (MQD-1465, n = 1.465) passou pelo seguinte pipeline em Pytho
 
 A coleta foi realizada na plataforma **PCIbex Farm** ([farm.pcibex.net](https://farm.pcibex.net)), que permite experimentos psicolinguísticos online com registro automático de tempo de resposta.
 
-- **Período de coleta:** `[PREENCHER: mês/ano início] a [PREENCHER: mês/ano fim]`
+- **Período de coleta:** `[JAN/2025] a [PREENCHER: MAR/2025]`
 - **Tarefa:** Classificar cada frase em uma de três classes de sentimento — *negativa*, *neutra* ou *positiva*
 - **Protocolo:** Cada participante acessou um bloco distinto e realizou a anotação de forma autônoma e assíncrona, sem acesso às avaliações dos demais
 - **Registro:** Para cada julgamento foram registrados o identificador anonimizado do participante (hash MD5 do endereço IP), o rótulo atribuído e o tempo de evento (usado para calcular duração em segundos)
@@ -198,13 +193,8 @@ A assimetria na correlação duração × certeza entre os grupos é um achado d
 
 ---
 
-## 5. Trabalhos Baseados neste Dataset
 
-- Feitosa, A. R.; Silva, G. G. P. (2026). *Do Anotador ao Classificador: Identificação e Mensuração de Viés de Gênero em Análise de Sentimentos para o Português Brasileiro*. Dissertação de Mestrado, CEFET/RJ. [principal trabalho de origem]
-
----
-
-## 6. Possibilidades de Uso
+## 5. Possibilidades de Uso
 
 - **Análise de viés de anotação por gênero** em tarefas de AS para português brasileiro
 - **Treinamento e avaliação de classificadores de sentimento** com rótulos estratificados por grupo demográfico, permitindo análise de impacto da fonte de supervisão
@@ -215,9 +205,8 @@ A assimetria na correlação duração × certeza entre os grupos é um achado d
 
 ---
 
-## 7. Considerações Éticas e Limitações
+## 6. Considerações Éticas e Limitações
 
-- Estudo aprovado pelo CEP sob protocolo CAAE nº 82267824.8.0000.5289
 - Participação voluntária com consentimento informado
 - Dados anonimizados: participantes identificados apenas por hash MD5, sem associação a qualquer informação pessoal identificável
 - O gênero é autodeclarado e tratado como variável binária (m/f) — limitação reconhecida; estudos futuros devem contemplar representações não binárias
@@ -226,15 +215,9 @@ A assimetria na correlação duração × certeza entre os grupos é um achado d
 
 ---
 
-## 8. Licença
+## 7. Licença
 
 Este dataset é disponibilizado sob a licença **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 Você pode compartilhar e adaptar o material para qualquer finalidade, incluindo comercial, desde que atribua crédito adequado.
 Detalhes: https://creativecommons.org/licenses/by/4.0/
 
----
-
-## 9. Contato
-
-Alexander Ramos Feitosa — CEFET/RJ, Programa de Pós-graduação em Ciência da Computação
-Orientador: Prof. D.Sc. Gustavo Guedes Paiva e Silva
